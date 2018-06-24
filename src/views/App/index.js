@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {WingBlank} from 'antd-mobile';
+import {WingBlank, Button} from 'antd-mobile';
 // import {Button} from 'antd-mobile';
 // import logo from './logo.svg';
 import 'animate.css';
@@ -21,7 +21,9 @@ class Index extends Component {
                     }}
                 ><span className="title-color">猜数字</span></div>
 
-                <Link className="am-button am-button-primary" to={'/game'}>开始游戏</Link>
+                <Link className="am-button am-button-primary" to={'/game'}>
+                    <Button type="primary">开始游戏</Button>
+                </Link>
 
                 <div style={{
                     textAlign: 'right',
