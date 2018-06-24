@@ -1,0 +1,37 @@
+.title-color {
+    animation: title-color infinite 20s linear;
+}
+
+@keyframes title-color {
+    0% {
+        color: chartreuse;
+    }
+    12.5% {
+        color: blueviolet;
+    }
+    25% {
+        color: aqua;
+    }
+    37.5% {
+        color: #52c41a;
+    }
+    50% {
+        color: fuchsia;
+    }
+
+    62.5% {
+        color: yellow;
+    }
+
+    75% {
+        color: darkorange;
+    }
+
+    87.5% {
+        color: burlywood;
+    }
+
+    100% {
+        color: chartreuse;
+    }
+}
