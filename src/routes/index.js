@@ -5,16 +5,9 @@ import {
 } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import App from "src/views/App";
-// import Game from 'src/views/Game';
-// import GameHistory from 'src/views/GameHistory';
-// import GameIntroduce from "../views/GameIntroduce";
+import Login from "src/views/Login";
+import PhotoAlbum from "../views/PhotoAlbum";
 
-// const App = Loadable({
-//     loader: () => import('src/views/App'),
-//     loading() {
-//         return <div>Loading...</div>
-//     },
-// });
 const Game = Loadable({
     loader: () => import('src/views/Game'),
     loading() {
@@ -37,6 +30,7 @@ const GameIntroduce = Loadable({
 function IndexRoutes() {
     return (
         <Switch>
+
             <Route
                 path="/"
                 // key={key}
@@ -54,6 +48,18 @@ function IndexRoutes() {
             <Route
                 path="/introduce"
                 component={GameIntroduce}
+            />
+            <Route
+                path="/login"
+                // key={key}
+                component={Login}
+                // exact
+            />
+            <Route
+                path="/photo-album"
+                // key={key}
+                component={PhotoAlbum}
+                // exact
             />
         </Switch>
     );
